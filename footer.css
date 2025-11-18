@@ -1,0 +1,17 @@
+/* ======= Footer ======= */
+footer {
+    background: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    margin-top: 200px;
+    /* ✅ Adds space above footer */
+}
+
+footer p {
+    font-size: 0.9rem;
+}

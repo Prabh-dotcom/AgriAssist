@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriAssist | Rain Prediction</title>
+  <link rel="stylesheet" href="rain-prediction.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌧️ AgriAssist Rain Prediction</h1>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button onclick="getRainPrediction()">Search</button>
+      </div>
+    </header>
+
+    <section class="weather-info" id="weatherInfo">
+      <h2>Enter a city to see rain prediction ☁️</h2>
+    </section>
+
+    <section class="rain-advice" id="rainAdvice">
+      <h3>🌾 Weather-based Farming Tips</h3>
+      <p>Plan your farming activities with rainfall forecasts and protect your crops effectively.</p>
+    </section>
+  </div>
+
+  <script src="rain-prediction.js"></script>
+</body>
+</html>

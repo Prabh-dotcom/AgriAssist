@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgriAssist | Market Prices</title>
+  <link rel="stylesheet" href="market-price.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📊 Market Prices</h1>
+      <p>Stay informed about real-time market prices from Agmarknet & local mandis</p>
+    </header>
+
+    <section class="form-section">
+      <div class="input-box">
+        <label for="commoditySelect">Commodity</label>
+        <select id="commoditySelect">
+          <option value="">Select Commodity</option>
+          <option value="Wheat">Wheat</option>
+          <option value="Rice">Rice</option>
+          <option value="Maize">Maize</option>
+          <option value="Groundnut">Groundnut</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="stateSelect">State</label>
+        <select id="stateSelect">
+          <option value="">Select State</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Karnataka">Karnataka</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="marketSelect">Mandi / Market</label>
+        <select id="marketSelect">
+          <option value="">Select Market</option>
+          <option value="Meerut">Meerut</option>
+          <option value="Indore">Indore</option>
+          <option value="Bengaluru">Bengaluru</option>
+        </select>
+      </div>
+      <button id="fetchBtn" class="btn">Fetch Prices</button>
+    </section>
+
+    <section class="results-section hidden" id="resultsSection">
+      <h2>💡 Price Details</h2>
+      <div class="price-box">
+        <p><strong>Commodity:</strong> <span id="resCommodity"></span></p>
+        <p><strong>Market:</strong> <span id="resMarket"></span></p>
+        <p><strong>Date:</strong> <span id="resDate"></span></p>
+        <p><strong>Min Price:</strong> ₹ <span id="resMin"></span> / quintal</p>
+        <p><strong>Max Price:</strong> ₹ <span id="resMax"></span> / quintal</p>
+        <p><strong>Modal Price:</strong> ₹ <span id="resModal"></span> / quintal</p>
+      </div>
+    </section>
+
+    <section class="note">
+      <p>Data source: <a href="https://agmarknet.gov.in" target="_blank">Agmarknet</a> & local mandi reports.</p>
+    </section>
+  </div>
+
+  <script src="market-price.js"></script>
+</body>
+</html>

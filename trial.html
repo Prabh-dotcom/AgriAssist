@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriAssist | All-in-One Farmer Support Hub</title>
+  <link rel="stylesheet" a href="trial.css">
+</head>
+
+<body>
+  
+<!-- ======= Header ======= -->
+<header>
+  <h1>AgriAssist</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="smartcrop.html">Smart Crop</a>
+    <a href="weather.html">Weather</a>
+    <a href="soil.html">Soil Health</a>
+    <a href="market.html">Market Prices</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="extra-features">
+    <!-- 🌐 Language Dropdown -->
+    <select id="languageSelect" title="Select Language">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+      <option value="pa">ਪੰਜਾਬੀ</option>
+      <option value="ta">தமிழ்</option>
+      <option value="te">తెలుగు</option>
+      <option value="mr">मराठी</option>
+      <option value="bn">বাংলা</option>
+    </select>
+
+    <!-- 🎙️ Voice Assistant -->
+    <button id="voiceBtn" title="Ask with Voice">🎤</button>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+    </a>
+    <a href="https://linkedin.com" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+    </a>
+    <a href="https://whatsapp.com" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+    </a>
+  </div>
+</header>
+
+<!-- Floating Voice Response -->
+<div id="voiceResponse" class="voice-response"></div>
+
+<!-- Hidden Google Translate element -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<!-- Floating Voice Response -->
+<div id="voiceResponse" class="voice-response"></div>
+
+<!-- Google Translate Script -->
+<div id="google_translate_element" style="display:none;"></div>
+
+
+<!-- Optional: Voice Response Display -->
+<div id="voiceResponse" class="voice-response"></div>
+
+
+  <!-- ======= Hero Section ======= -->
+  <section class="hero" id="home">
+    <h2>Your All-in-One Smart Farming Companion</h2>
+    <p>Weather • Soil • Market • Pest Detection • Multilingual • Voice Assistance — all in one hub</p>
+    <button onclick="scrollToSection('features')">Explore Features</button>
+  </section>
+
+  <!-- ======= Features Section ======= -->
+  <section class="features" id="features">
+    <h3>Our Key Features</h3>
+    <div class="feature-grid">
+      <div class="feature" onclick="window.location.href='weather.html'">
+        <img src="weather.png" alt="Weather">
+        <h4>Weather Updates</h4>
+        <p>Accurate and localized forecasts help you plan your farming schedule effectively.</p>
+      </div>
+      <div class="feature" onclick="window.location.href='soil-health-analysis.html'">
+        <img src="soil.png" alt="Soil">
+        <h4>Soil Health Analysis</h4>
+        <p>Get advice on soil fertility and crop suitability to maximize yield.</p>
+      </div>
+      <div class="feature" onclick="window.location.href='pest-detection.html'">
+        <img src="pest.webp" alt="Pest Detection">
+        <h4>Pest Detection</h4>
+        <p>Detect crop diseases and pests early using smart AI image analysis.</p>
+      </div>
+      <div class="feature" onclick="window.location.href='market-price.html'">
+        <img src="coin.png" alt="Market Prices">
+        <h4>Market Prices</h4>
+        <p>Stay informed about real-time market prices from Agmarknet and local mandis.</p>
+      </div>
+      <div class="feature">
+        <img src="language.png" alt="Multilingual">
+        <h4>Multilingual Support</h4>
+        <p>Available in multiple Indian languages for easy accessibility to all farmers.</p>
+      </div>
+      <div class="feature">
+        <img src="microphone.png" alt="Voice Assistant">
+        <h4>Voice Assistance</h4>
+        <p>Ask questions and get instant answers using voice commands in your language.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= About Section ======= -->
+  <section class="about" id="about">
+    <h3>About AgriAssist</h3>
+    <p>
+      AgriAssist is an integrated digital platform designed to empower farmers with all essential tools
+      in one place. Unlike apps like Kisan Suvidha, Plantix, or Agmarknet that focus on specific aspects,
+      AgriAssist combines weather updates, soil health insights, pest detection, market trends, multilingual
+      support, and voice assistance — creating a truly smart farming ecosystem.
+    </p>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="contact">
+    <p>🌿 © 2025 AgriAssist | Empowering Farmers with Technology 🌿</p>
+    <p>Made with ❤️ by Prabhjot Kaur</p>
+  </footer>
+
+  <script src="trial.js"></script>
+</body>
+
+</html>

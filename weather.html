@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriAssist | Weather Insights</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>🌾 AgriAssist Weather Insights</h1>
+      <p>Smart Farming Decisions Based on Weather Conditions</p>
+    </header>
+
+    <!-- FORECAST LINKS SECTION -->
+    <section class="forecast-links">
+      <div class="card" onclick="window.location.href='hourly-forecast.html'">
+        <h2>🌤️ Hourly Forecast</h2>
+        <p>Track detailed weather changes for every hour.</p>
+      </div>
+
+      <div class="card" onclick="window.location.href='4-day-forecast.html'">
+        <h2>🌦️ 4-Day Forecast</h2>
+        <p>Plan ahead with upcoming 4-day weather predictions.</p>
+      </div>
+
+      <div class="card" onclick="window.location.href='rain-prediction.html'">
+        <h2>🌧️ Rain Prediction</h2>
+        <p>Check rainfall chances and prepare your fields accordingly.</p>
+      </div>
+    </section>
+
+    <!-- ADVICE SECTION -->
+    <section class="advice">
+      <h2>🌱 Smart Crop Recommendations</h2>
+      <div class="advice-box">
+        <p>Enter your current temperature (°C) and rain chances to get crop guidance 👇</p>
+        <div class="inputs">
+          <input type="number" id="tempInput" placeholder="Enter temperature (°C)">
+          <select id="rainInput">
+            <option value="">Rain chance?</option>
+            <option value="no">No Rain</option>
+            <option value="low">Light Rain</option>
+            <option value="high">Heavy Rain</option>
+          </select>
+          <button onclick="getAdvice()">Get Advice</button>
+        </div>
+        <div class="result" id="adviceResult">
+          🌾 Enter temperature and rain details to get personalized advice!
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgriAssist · Pest Detection</title>
+  <link rel="stylesheet" href="pest-detection.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.12.0/dist/tf.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🕵️‍♂️ AgriAssist — Pest & Disease Detection</h1>
+      <p>Detect crop pests & diseases early using smart AI image analysis</p>
+    </header>
+
+    <main class="card">
+      <div class="upload-area" id="dropZone">
+        <label class="file-label" for="imageInput">
+          <input id="imageInput" type="file" accept="image/*" capture="environment" />
+          <span>📸 Upload or Drag & Drop an image of your crop</span>
+        </label>
+
+        <div id="previewWrapper" class="preview">
+          <img id="preview" alt="Image preview" />
+        </div>
+
+        <div class="controls">
+          <button id="cameraBtn" class="btn ghost">Open Camera</button>
+          <button id="analyzeBtn" class="btn" disabled>Analyze Image</button>
+          <button id="demoBtn" class="btn ghost">Run Demo</button>
+        </div>
+
+        <div id="status" class="status">Model: <span id="modelStatus">Demo Mode</span></div>
+      </div>
+
+      <section id="results" class="results hidden">
+        <h2>Detection Results</h2>
+        <div id="predictions" class="predictions"></div>
+        <div id="advice" class="advice"></div>
+      </section>
+
+      <section class="tutorial">
+        <h3>📷 How to Capture the Best Leaf Photos</h3>
+        <button id="openTutorial" class="btn ghost">Show Tips</button>
+      </section>
+    </main>
+  </div>
+
+  <!-- Tutorial Popup -->
+  <div id="tutorialModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>🌿 Tips for Accurate Pest Detection</h2>
+      <ul>
+        <li>📸 Capture in daylight — avoid shadows or glare.</li>
+        <li>🍃 Focus on 1–2 leaves clearly (no clutter).</li>
+        <li>🪴 Use plain background if possible.</li>
+        <li>🌾 Take photo close-up but in focus.</li>
+        <li>🧩 Upload multiple images if unsure for better detection.</li>
+      </ul>
+      <button id="closeTutorial" class="btn">Got It!</button>
+    </div>
+  </div>
+
+  <script src="pest-detection.js"></script>
+</body>
+</html>
+

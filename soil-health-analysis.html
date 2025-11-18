@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriAssist | Soil Health Analysis</title>
+  <link rel="stylesheet" href="soil-health-analysis.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌱 Soil Health Analysis</h1>
+      <p>Get advice on soil fertility and crop suitability to maximize yield</p>
+    </header>
+
+    <section class="form-section">
+      <h2>🔍 Enter Soil Details</h2>
+      <div class="form-grid">
+        <div class="input-box">
+          <label>Soil Type</label>
+          <select id="soilType">
+            <option value="">Select</option>
+            <option value="alluvial">Alluvial</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="laterite">Laterite</option>
+            <option value="arid">Arid</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <label>Soil pH</label>
+          <input type="number" id="ph" placeholder="e.g., 6.5" step="0.1" />
+        </div>
+        <div class="input-box">
+          <label>Nitrogen (mg/kg)</label>
+          <input type="number" id="nitrogen" placeholder="e.g., 250" />
+        </div>
+        <div class="input-box">
+          <label>Phosphorus (mg/kg)</label>
+          <input type="number" id="phosphorus" placeholder="e.g., 30" />
+        </div>
+        <div class="input-box">
+          <label>Potassium (mg/kg)</label>
+          <input type="number" id="potassium" placeholder="e.g., 300" />
+        </div>
+      </div>
+      <button class="analyze-btn" onclick="analyzeSoil()">Analyze Soil</button>
+    </section>
+
+    <section class="results-section">
+      <h2>🌾 Soil Health Insights</h2>
+      <div id="soilResult" class="result-card"></div>
+    </section>
+
+    <section class="crop-suggestions">
+      <h2>🌿 Recommended Crops</h2>
+      <div id="cropSuggestions" class="crop-grid"></div>
+    </section>
+  </div>
+
+  <script src="soil-health-analysis.js"></script>
+</body>
+</html>

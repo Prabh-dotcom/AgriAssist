@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriAssist | 4-Day Forecast</title>
+  <link rel="stylesheet" href="4-day-forecast.css" />
+</head>
+<body>
+  <div class="weather-container">
+    <header>
+      <h1>🌾 AgriAssist 4-Day Forecast</h1>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter a city..." />
+        <button onclick="getForecast()">Search</button>
+      </div>
+    </header>
+
+    <section class="forecast-intro">
+      <h2 id="cityName">Your City</h2>
+      <p>Accurate 4-Day weather forecast to plan your farming schedule 🌤️</p>
+    </section>
+
+    <section class="forecast-section">
+      <h3>Next 4 Days Forecast</h3>
+      <div class="forecast-cards" id="forecastCards"></div>
+    </section>
+  </div>
+
+  <script src="4-day-forecast.js"></script>
+</body>
+</html>

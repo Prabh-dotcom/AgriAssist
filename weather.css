@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #a2e2a2, #7ec8e3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.container {
+   background: linear-gradient(135deg, #a2e2a2, #7ec8e3);
+  width: 95%;
+  max-width: 1100px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+header {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.forecast-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.card h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* --- ADVICE SECTION --- */
+.advice {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.advice h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.inputs input,
+.inputs select {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  min-width: 180px;
+}
+
+.inputs button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.inputs button:hover {
+  background: #256428;
+}
+
+.result {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .forecast-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

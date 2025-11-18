@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriAssist | Weather Dashboard</title>
+  <link rel="stylesheet" href="hourly-forecast.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="weather-container">
+    <header>
+      <h1>🌾 AgriAssist Weather</h1>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Search for a city..." />
+        <button onclick="getWeather()">Search</button>
+      </div>
+    </header>
+
+    <!-- Current Weather -->
+    <section class="current-weather">
+      <div class="info">
+        <h2 id="cityName">Your City</h2>
+        <h1 id="temperature">--°C</h1>
+        <p id="description">--</p>
+        <div class="details">
+          <p>💧 Humidity: <span id="humidity">--%</span></p>
+          <p>🌬️ Wind: <span id="wind">-- km/h</span></p>
+          <p>🌦️ Precipitation: <span id="precip">-- mm</span></p>
+          <p>🌫️ Air Quality: <span id="airQuality">--</span></p>
+        </div>
+      </div>
+      <div class="chart">
+        <canvas id="hourlyChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Hourly Forecast -->
+    <section class="hourly-forecast">
+      <h3>Hourly Forecast</h3>
+      <div class="hourly-cards" id="hourlyCards"></div>
+    </section>
+
+  
+  </div>
+
+  <script src="hourly-forecast.js"></script>
+</body>
+</html>
+

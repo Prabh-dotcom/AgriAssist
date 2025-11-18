@@ -1,0 +1,127 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+     background-color: #f5f7fa;
+     color: #333;
+ }
+
+
+ /* Hero Section */
+ .hero {
+     background: url('crop.png') center/cover no-repeat;
+     height: 300px;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+     color: white;
+     text-align: center;
+      padding: 0 20px;
+ }
+
+ .hero h1 {
+     font-size: 2.5rem;
+     background: rgba(0, 0, 0, 0.4);
+     padding: 10px 20px;
+     border-radius: 10px;
+ }
+
+ /* Contact Section */
+ .contact-container {
+     max-width: 1100px;
+     margin: 50px auto;
+     background: white;
+     border-radius: 15px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     padding: 40px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 40px;
+ }
+
+ .contact-info,
+ .contact-form {
+     flex: 1 1 450px;
+ }
+
+ .contact-info h2,
+ .contact-form h2 {
+     color:  #2e7d32;
+     margin-bottom: 15px;
+ }
+
+ .info-card {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     margin-bottom: 15px;
+     background: #f0f9f4;
+     padding: 15px;
+     border-radius: 10px;
+     transition: 0.3s;
+ }
+
+ .info-card:hover {
+     background: #e2f5e8;
+ }
+
+ .info-card i {
+     font-size: 1.5rem;
+     color:  #2e7d32;
+ }
+
+ .contact-form form {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .contact-form input,
+ .contact-form textarea {
+     margin-bottom: 15px;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     font-size: 1rem;
+ }
+
+ .contact-form button {
+     padding: 12px;
+     background: #2e8b57;
+     border: none;
+     color: white;
+     font-size: 1rem;
+     font-weight: 600;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ .contact-form button:hover {
+     background: #2e7d32;
+ }
+
+
+ }
+
+ @media (max-width: 768px) {
+     header {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     nav {
+         margin-top: 10px;
+     }
+
+     .hero h1 {
+         font-size: 1.8rem;
+     }
+
+     .contact-container {
+         padding: 20px;
+     }
+ }

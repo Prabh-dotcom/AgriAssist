@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | AgriAssist</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  
+  <!-- 🌾 ABOUT SECTION -->
+  <section class="about">
+    <div class="about-text">
+      <h2>Empowering Farmers with Technology 🌱</h2>
+      <p>
+        AgriAssist is your one-stop digital farming companion — built to support farmers with modern, AI-driven insights.
+        Whether it’s predicting crop diseases, analyzing soil health, checking market prices, or tracking weather — 
+        AgriAssist makes smart farming simple and accessible for every farmer in India.
+      </p>
+      <p>
+        Our mission is to bridge the gap between traditional farming and modern technology by offering farmers tools 
+        that help increase yield, reduce risk, and improve profitability — all in their own language.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="grass.webp" alt="Indian Farmer">
+    </div>
+  </section>
+
+  <!-- 🌍 OUR MISSION -->
+  <section class="mission">
+    <h2>Our Mission & Vision 🌾</h2>
+    <div class="mission-cards">
+      <div class="card">
+        <img src="innovation.avif" alt="Innovation">
+        <h3>Innovation in Agriculture</h3>
+        <p>We aim to empower farmers with AI tools that predict diseases, recommend crops, and provide smart insights for sustainable farming.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-vector/community-support-concept-illustration_114360-2138.jpg" alt="Community Support">
+        <h3>Farmer Community</h3>
+        <p>Connecting farmers with experts and each other to share knowledge, get advice, and grow together.</p>
+      </div>
+      <div class="card">
+        <img src="sustainably.avif" alt="Sustainability">
+        <h3>Sustainability</h3>
+        <p>Helping build a future where farming is both profitable and eco-friendly using data-driven solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📸 GALLERY -->
+  <section class="gallery">
+    <h2>Our Journey Through Images 📸</h2>
+    <div class="gallery-images">
+      <img src="crop field.avif" alt="Crop Field">
+      <img src="laptop.avif" alt="Farmer with Laptop">
+      <img src="wheat.avif" alt="Green Wheat">
+      <img src="soil health.avif" alt="Soil Health">
+    </div>
+  </section>
+
+  <!-- 💬 FAQ -->
+  <section class="faq">
+    <h2>Frequently Asked Questions 💬</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What is AgriAssist?</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <p>AgriAssist is a smart agriculture platform that offers real-time weather updates, soil advice, crop recommendations, pest detection, and market price insights.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How can farmers access AgriAssist?</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <p>Farmers can use AgriAssist via any web browser on their mobile or desktop, available in multiple Indian languages for easy understanding.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Does AgriAssist work offline?</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <p>Currently, AgriAssist requires an internet connection to fetch live weather and market data. Offline support is under development.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How accurate are the crop disease predictions?</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <p>AgriAssist uses trained AI models from the PlantVillage dataset, which offer high accuracy for major Indian crops like wheat, tomato, and potato.</p>
+    </div>
+  </section>
+
+  <!-- 🤖 CHATBOT -->
+  <div class="chatbot-container" id="chatbot">
+    <div class="chat-header">
+      💬 AgriAssist Chatbot
+      <span id="closeChat">❌</span>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="bot-message">Hello 👋! I’m AgriBot — How can I help you today?</div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="Type your message...">
+      <button id="sendBtn">➤</button>
+    </div>
+  </div>
+
+  <button id="chatToggle">💬</button>
+
+  
+
+  <script src="about.js"></script>
+</body>
+</html>
