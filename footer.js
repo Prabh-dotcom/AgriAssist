@@ -4,7 +4,7 @@
 function loadFooter() {
   fetch("footer.html")
     .then(response => {
-      if (!response.ok) throw new Error("Footer file not found");
+      if (!response.ok) throw new Error("Footer file not found");                        
       return response.text();
     })
     .then(data => {
@@ -15,3 +15,9 @@ function loadFooter() {
 
 // Load footer after DOM is ready
 document.addEventListener("DOMContentLoaded", loadFooter);
+
+
+
+
+
+
