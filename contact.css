@@ -10,6 +10,59 @@
      color: #333;
  }
 
+ /* header */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2e7d32;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c8e6c9;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 12px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons img {
+    width: 26px;
+    height: 26px;
+    filter: brightness(0) invert(1);
+}
 
  /* Hero Section */
  .hero {
@@ -125,3 +178,15 @@
          padding: 20px;
      }
  }
+
+ /* ======= Footer ======= */
+footer {
+    background: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
